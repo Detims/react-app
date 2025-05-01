@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 export default function Person(props) {
     const [person, setPerson] = useState({
@@ -18,6 +19,7 @@ export default function Person(props) {
             <h1>{person.name}</h1>
             <h2>{person.age}</h2>
             <button onClick={handleIncreaseAge}>Click Me</button>
+            <Link to="/">Go back</Link>
         </>
     )
 }

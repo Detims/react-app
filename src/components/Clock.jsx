@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Clock() {
   const [counter, setCounter] = useState(0);
@@ -15,6 +16,9 @@ export default function Clock() {
   }, []) // Dependency array
 
   return (
-    <p>{counter} seconds have passed.</p>
+    <>
+      <p>{counter} seconds have passed.</p>
+      <Link to="/">Go back</Link>
+    </>
   );
 }
