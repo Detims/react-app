@@ -1,10 +1,19 @@
 import { useState } from 'react'
 import './App.css'
-import AddListItem from './components/AddListItem'
-import ListItem from './components/ListItem'
+// import AddListItem from './components/AddListItem'
+// import ListItem from './components/ListItem'
 import { Link } from 'react-router-dom'
 
 function App() {
+  return (
+    <div>
+      
+    </div>
+  );
+}
+
+export default App
+
   // const [tasks, setTasks] = useState([])
   
   // function addItem(task) {
@@ -39,20 +48,3 @@ function App() {
   //     })}
   //   </div>
   // )
-
-  return (
-    <div>
-      <h1>Hello from the main page of the app!</h1>
-      <p>Here are some examples of links to other pages</p>
-      <nav>
-        <ul>
-          <li>
-            <Link to="profile">Profile Page</Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  );
-}
-
-export default App
